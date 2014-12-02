@@ -29,7 +29,7 @@ compile_scss(
 )
 
 java_binary(
-    name = 'buck-spark-redis',
+    name = 'srbb',
     main_class = 'com.github.mread.Server',
     deps = [
         ':core'
