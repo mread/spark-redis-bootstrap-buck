@@ -1,0 +1,34 @@
+def compile_scss( name,
+                       input_file,
+                       output_file,
+                       resources = [ ],
+                       resources_root = None,
+                       deps = [ ] ):
+    cmd = [ '$(exe //build:make-scss)', '-o', '${OUT}', '-r', '$(location //lib:jruby)', '-s', '$(location //lib:sass)' ]
+
+    for l in deps:
+        cmd.extend( [ '-l', '$(location %s)' % l ] )
+
+    root_dir = '${SRCDIR}/' + ('' if resources_root is None else resources_root)
+    cmd.append( root_dir )
+
+    cmd.append( input_file )
+    cmd.append( output_file )
+
+    genrule(
+        name = '%s__scss' % name,
+        srcs = resources,
+        cmd = ' '.join( cmd ),
+        deps = [
+            '//build:make-scss',
+            '//lib:jruby',
+            '//lib:sass'
+        ],
+        out = name + '.jar',
+        visibility = [ 'PUBLIC' ]
+    )
+
+    prebuilt_jar(
+        name = name,
+        binary_jar = ':%s__scss' % name
+    )

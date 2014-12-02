@@ -1,0 +1,133 @@
+prebuilt_jar(
+    name = 'spark-core',
+    binary_jar = '3rd-party/spark-core-2.0.0.jar',
+    source_jar = '3rd-party/spark-core-2.0.0-sources.jar',
+    visibility = ['PUBLIC'],
+    deps = [
+        ':servletapi',
+        ':slf4j-api',
+        ':slf4j-simple',
+        ':jetty-http',
+        ':jetty-io',
+        ':jetty-server',
+        ':jetty-util'
+    ]
+)
+prebuilt_jar(name = 'jetty-server', binary_jar = '3rd-party/jetty-server-9.0.2.v20130417.jar')
+prebuilt_jar(name = 'jetty-util', binary_jar = '3rd-party/jetty-util-9.0.2.v20130417.jar')
+prebuilt_jar(name = 'jetty-io', binary_jar = '3rd-party/jetty-io-9.0.2.v20130417.jar')
+prebuilt_jar(name = 'jetty-http', binary_jar = '3rd-party/jetty-http-9.0.2.v20130417.jar')
+
+prebuilt_jar(
+    name = 'jade4j',
+    binary_jar = '3rd-party/jade4j-0.4.0.jar',
+    source_jar = '3rd-party/jade4j-0.4.0-sources.jar',
+    visibility = ['PUBLIC'],
+    deps = [
+        ':commons-io',
+        ':commons-logging',
+        ':commons-collections',
+        ':concurrentlinkedhashmap',
+        ':bsf-api',
+        ':commons-lang3',
+        ':commons-jexl'
+    ]
+)
+prebuilt_jar(name = 'concurrentlinkedhashmap', binary_jar = '3rd-party/concurrentlinkedhashmap-lru-1.3.1.jar', )
+
+prebuilt_jar(
+    name = 'bsf-api',
+    binary_jar = '3rd-party/bsf-api-3.1.jar'
+)
+
+prebuilt_jar(
+    name = 'commons-lang3',
+    binary_jar = '3rd-party/commons-lang3-3.3.2.jar',
+    source_jar = '3rd-party/commons-lang3-3.3.2-sources.jar'
+)
+
+prebuilt_jar(
+    name = 'commons-jexl',
+    binary_jar = '3rd-party/commons-jexl-2.1.1.jar',
+    source_jar = '3rd-party/commons-jexl-2.1.1-sources.jar'
+)
+
+prebuilt_jar(
+    name = 'jedis',
+    binary_jar = '3rd-party/jedis-2.6.1.jar',
+    source_jar = '3rd-party/jedis-2.6.1-sources.jar',
+    visibility = ['PUBLIC'],
+    deps = [
+        ':commons-pool'
+    ]
+)
+
+prebuilt_jar(
+    name = 'commons-collections',
+    binary_jar = '3rd-party/commons-collections-3.2.1.jar',
+    source_jar = '3rd-party/commons-collections-3.2.1-sources.jar',
+    visibility = ['PUBLIC']
+)
+
+prebuilt_jar(
+    name = 'commons-io',
+    binary_jar = '3rd-party/commons-io-2.4.jar',
+    source_jar = '3rd-party/commons-io-2.4-sources.jar',
+    visibility = ['PUBLIC']
+)
+
+prebuilt_jar(
+    name = 'commons-logging',
+    binary_jar = '3rd-party/commons-logging-1.2.jar',
+    source_jar = '3rd-party/commons-logging-1.2-sources.jar',
+    visibility = ['PUBLIC']
+)
+
+prebuilt_jar(
+    name = 'commons-pool',
+    binary_jar = '3rd-party/commons-pool-1.6.jar',
+    source_jar = '3rd-party/commons-pool-1.6-sources.jar',
+    visibility = ['PUBLIC']
+)
+
+prebuilt_jar(
+    name = 'gson',
+    binary_jar = '3rd-party/gson-2.3.1.jar',
+    visibility = ['PUBLIC']
+)
+
+prebuilt_jar(
+    name = 'jruby',
+    binary_jar = '3rd-party/jruby-complete-1.7.16.1.jar',
+    source_jar = '3rd-party/jruby-complete-1.7.16.1-sources.jar',
+    visibility = ['PUBLIC']
+)
+
+prebuilt_jar(
+    name = 'sass',
+    binary_jar = '3rd-party/sass-java-gems-3.4.4.2.jar',
+    source_jar = '3rd-party/sass-java-gems-3.4.4.2-sources.jar',
+    visibility = ['PUBLIC']
+)
+
+prebuilt_jar(
+    name = 'servletapi',
+    binary_jar = '3rd-party/javax.servlet-api-3.1.0.jar',
+    source_jar = '3rd-party/javax.servlet-api-3.1.0-sources.jar',
+    visibility = ['PUBLIC']
+)
+
+prebuilt_jar(
+    name = 'slf4j-api',
+    binary_jar = '3rd-party/slf4j-api-1.7.7.jar',
+    source_jar = '3rd-party/slf4j-api-1.7.7-sources.jar',
+    visibility = ['PUBLIC']
+)
+
+prebuilt_jar(
+    name = 'slf4j-simple',
+    binary_jar = '3rd-party/slf4j-simple-1.7.7.jar',
+    source_jar = '3rd-party/slf4j-simple-1.7.7-sources.jar',
+    visibility = ['PUBLIC']
+)
+

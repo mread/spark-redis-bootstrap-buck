@@ -1,0 +1,5 @@
+sh_binary(
+    name = 'make-scss',
+    main = 'make_scss.sh',
+    visibility = [ 'PUBLIC' ]
+)
