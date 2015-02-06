@@ -1,0 +1,11 @@
+{
+    "name": "template",
+    "devDependencies": {
+        "browserify-mustache": "0.0.4"
+    },
+    "browserify": {
+        "transform": [
+            "browserify-mustache"
+        ]
+    }
+}
