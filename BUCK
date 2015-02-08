@@ -2,7 +2,7 @@
 genrule(
     name = '_bundle-javascript',
     srcs = glob( [ 'src/main/javascript/**/*' ] ),
-    cmd = 'browserify --debug src/main/javascript/home.js > $OUT',
+    cmd = './../../../node_modules/.bin/browserify --debug src/main/javascript/home.js -o $OUT',
     out = 'home.js'
 )
 
