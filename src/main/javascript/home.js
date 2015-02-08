@@ -1,3 +1,5 @@
+var welcomeMessage = require('./partials/message.mustache');
+
 $(function() {
-    $('.container').append($('<p>').text('Javascript enabled'));
+    $('#message').html(welcomeMessage());
 });

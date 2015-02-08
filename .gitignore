@@ -1,4 +1,5 @@
 .buckd
 buck-out
 out
-.idea/libraries
+.idea
+node_modules
