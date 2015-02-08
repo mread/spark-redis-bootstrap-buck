@@ -2,3 +2,4 @@
 buck-out
 out
 .idea/libraries
+node_modules

@@ -5,7 +5,7 @@ Template project for Java 8 web app stack using spark, redis, bootstrap, jade an
 
 1. clone me
 2. install and start redis
-3. run npm install --save
+3. run npm install
 4. clone buck and put buck/bin on your path
 5. buck run :srbb
 6. http://localhost:4567
