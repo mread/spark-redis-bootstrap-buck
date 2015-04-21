@@ -5,7 +5,7 @@ import com.github.mread.domain.store.Store;
 import com.github.mread.routes.HomeRoutes;
 import com.github.mread.store.RedisStore;
 
-import static com.github.mread.config.Use.use;
+import static com.github.mread.routes.SparkDsl.use;
 import static spark.SparkBase.staticFileLocation;
 
 public class Server {

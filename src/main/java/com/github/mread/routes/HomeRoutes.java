@@ -1,7 +1,8 @@
 package com.github.mread.routes;
 
-import com.github.mread.config.Binder;
-import com.github.mread.config.Router;
+
+import com.github.mread.routes.bind.Binder;
+import com.github.mread.routes.bind.Router;
 import spark.ModelAndView;
 import spark.Request;
 import spark.Response;

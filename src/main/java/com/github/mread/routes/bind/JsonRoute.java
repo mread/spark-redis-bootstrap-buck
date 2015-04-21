@@ -1,4 +1,4 @@
-package com.github.mread.config;
+package com.github.mread.routes.bind;
 
 import spark.Route;
 

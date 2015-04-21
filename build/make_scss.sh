@@ -1,7 +1,7 @@
 #!/bin/bash
 set -euo pipefail
 IFS=$'\n\t'
-TMP=`mktemp -d`
+TMP=`mktemp -d -t srrb`
 
 ASSETS_DIR=${TMP}/assets/unpack
 GENERATED_ASSETS_DIR=${TMP}/main/generated-assets

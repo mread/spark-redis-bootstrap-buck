@@ -45,6 +45,7 @@ java_library(
         '//lib:gson',
         '//lib:jade4j',
         '//lib:jedis',
+        '//lib:log4j',
         '//lib:spark-core',
         ':bundled-javascript',
         ':css',

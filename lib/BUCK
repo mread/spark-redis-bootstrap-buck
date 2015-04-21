@@ -104,6 +104,13 @@ prebuilt_jar(
 )
 
 prebuilt_jar(
+    name = 'log4j',
+    binary_jar = '3rd-party/log4j-1.2.17.jar',
+    source_jar = '3rd-party/log4j-1.2.17-sources.jar',
+    visibility = ['PUBLIC']
+)
+
+prebuilt_jar(
     name = 'sass',
     binary_jar = '3rd-party/sass-java-gems-3.4.4.2.jar',
     source_jar = '3rd-party/sass-java-gems-3.4.4.2-sources.jar',
